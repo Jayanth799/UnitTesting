@@ -1,0 +1,12 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/CalculatorService/CalculatorService/bin/Debug/netcoreapp3.1
+/CalculatorService/CalculatorMSTestService/obj
+/CalculatorService/.vs/CalculatorService
+/CalculatorService/CalculatorMSTestService/bin
+/CalculatorService/CalculatorService/obj
+/CalculatorService/CalculatorTestService/bin
+/CalculatorService/CalculatorTestService/obj
+/.vs
