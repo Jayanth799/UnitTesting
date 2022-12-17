@@ -10,3 +10,8 @@
 /CalculatorService/CalculatorTestService/bin
 /CalculatorService/CalculatorTestService/obj
 /.vs
+/EmployeeCURDOperations/.vs
+/EmployeeCURDOperations/EmployeeCURDService/bin/Debug/net6.0
+/EmployeeCURDOperations/EmployeeCURDService/obj
+/EmployeeCURDOperations/EmployeeTestService/bin/Debug/net6.0
+/EmployeeCURDOperations/EmployeeTestService/obj
