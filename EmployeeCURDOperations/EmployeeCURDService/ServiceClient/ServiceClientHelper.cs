@@ -1,4 +1,4 @@
-﻿namespace EmployeeCURDService.ServiceClient
+﻿namespace StudentCURDService.ServiceClient
 {
     public class ServiceClientHelper
     {
@@ -9,7 +9,7 @@
             _httpClient = httpClient;
         }
 
-        public async Task<string> GetEmployeeSalary(int id)
+        public async Task<string> GetStudentFee(int id)
         {
             string result = string.Empty;
 
@@ -27,7 +27,7 @@
             {
                 try
                 {
-                    string url = "https://localhost:8081/EmployeeDetails";
+                    string url = "https://localhost:8081/StudentFee";
 
                     url = url + "?Id=" + id;
 

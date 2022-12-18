@@ -1,5 +1,5 @@
-using EmployeeCURDService.Interface;
-using EmployeeCURDService.Repository;
+using StudentCURDService.Interface;
+using StudentCURDService.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,8 +12,8 @@ builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-builder.Services.AddScoped<IEmployeeRepository,EmployeeRepository>();
-builder.Services.AddDbContext<EmployeeDBContext>(option => option.UseSqlServer(connectionString));
+builder.Services.AddScoped<IStudentRepository, StudentRepository>();
+builder.Services.AddDbContext<StudentDBContext>(option => option.UseSqlServer(connectionString));
 
 var app = builder.Build();
 

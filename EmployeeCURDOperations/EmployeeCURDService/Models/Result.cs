@@ -1,4 +1,4 @@
-﻿namespace EmployeeCURDService.Models
+﻿namespace StudentCURDService.Models
 {
     public class Result <T>
     {

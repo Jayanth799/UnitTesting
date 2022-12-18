@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace EmployeeCURDService.Controllers
+namespace StudentCURDService.Controllers
 {
     [ApiController]
     [Route("[controller]")]

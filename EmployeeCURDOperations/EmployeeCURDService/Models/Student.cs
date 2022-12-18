@@ -1,6 +1,6 @@
-﻿namespace EmployeeCURDService.Models
+﻿namespace StudentCURDService.Models
 {
-    public class Employee
+    public class Student
     {
         public int Id { get; set; }
 
@@ -9,8 +9,6 @@
         public string Address { get; set; }
 
         public string MobileNumber { get; set; }
-
-        public string Role { get; set; }
 
     }
 }

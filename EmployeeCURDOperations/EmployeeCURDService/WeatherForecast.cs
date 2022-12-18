@@ -1,4 +1,4 @@
-namespace EmployeeCURDService
+namespace StudentCURDService
 {
     public class WeatherForecast
     {

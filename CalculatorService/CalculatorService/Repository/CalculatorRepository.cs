@@ -7,7 +7,7 @@ namespace CalculatorService.Repository
 {
     public static class CalculatorRepository
     {
-        public static  int Calculator(int firstNumber,int secondNumber,string operation)
+        public static int Calculator(int firstNumber,int secondNumber,string operation)
         {
             int finalValue = 0;
 
@@ -25,70 +25,17 @@ namespace CalculatorService.Repository
                         if(secondNumber != 0)
                             finalValue = firstNumber / secondNumber;
                         break;
-                    case "Substraction":
+                    case "Substract":
                         finalValue = firstNumber - secondNumber;
                         break;
-                      
                 }
-
             }
             catch(Exception ex)
             {
-
+                throw ex;
             }
 
             return finalValue;
         }
-
-        //public int Substraction(int firstNumber, int secondNumber)
-        //{
-        //    int finalValue = 0;
-
-        //    try
-        //    {
-        //        finalValue = firstNumber - secondNumber;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //    }
-
-        //    return finalValue;
-        //}
-
-        //public int Division(int firstNumber, int secondNumber)
-        //{
-        //    int finalValue = 0;
-
-        //    try
-        //    {
-        //        if(secondNumber !=0)
-        //            finalValue = firstNumber/secondNumber;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //    }
-
-        //    return finalValue;
-        //}
-
-        //public int Multiplication(int firstNumber, int secondNumber)
-        //{
-        //    int finalValue = 0;
-
-        //    try
-        //    {
-        //            finalValue = firstNumber * secondNumber;
-        //    }
-        //    catch (Exception ex)
-        //    {
-
-        //    }
-
-        //    return finalValue;
-        //}
-
-
     }
 }

@@ -1,19 +1,19 @@
-﻿using EmployeeCURDService.Interface;
-using EmployeeCURDService.Models;
+﻿using StudentCURDService.Interface;
+using StudentCURDService.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
 using System.Text;
 
-namespace EmployeeCURDService.Controllers
+namespace StudentCURDService.Controllers
 {
-    public class EmployeeController : Controller
+    public class StudentController : Controller
     {
-        private IEmployeeRepository _employeeRepository;
+        private IStudentRepository _studentRepository;
 
-        public EmployeeController(IEmployeeRepository employeeRepository)
+        public StudentController(IStudentRepository studentRepository)
         {
-            _employeeRepository = employeeRepository;
+            _studentRepository = studentRepository;
         }
 
         // GET: EmployeeController
@@ -23,9 +23,9 @@ namespace EmployeeCURDService.Controllers
         }
 
         // GET: EmployeeController/Details/5
-        public Employee Details(int id)
+        public Student Details(int id)
         {
-            var employeeDetails = _employeeRepository.GetEmployeeDetails(id);
+            var employeeDetails = _studentRepository.GetEmployeeDetails(id);
 
             return employeeDetails;
         }
