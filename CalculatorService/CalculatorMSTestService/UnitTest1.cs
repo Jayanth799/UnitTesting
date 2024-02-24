@@ -37,6 +37,5 @@ namespace CalculatorMSTestService
             Assert.AreEqual(finalValue, firstNumber - secondeNumber);
 
         }
-
     }
 }
